@@ -1,7 +1,7 @@
 export default defineAppConfig({
   general: {
-    title: 'Minted Directory',
-    logo: '',
+    title: 'City Heights Defense Committee',
+    logo: '/chdc-logo-64x.png',
     iconLogo: 'fluent-emoji-flat:leaf-fluttering-in-wind',
     language: 'en',
   },
@@ -9,22 +9,22 @@ export default defineAppConfig({
     // override the general settings for seo tags.
     // leave empty for general priority.
     // url is necessary for correct function of seo module.
-    name: 'Minted Directory',
-    description: 'Example Description',
-    url: 'https://example.com',
+    name: 'City Heights Defense Committee',
+    description: 'Resources, guides, community and legal organization directory to empower our community',
+    url: 'https://salemaziel-minted-directory-nuxthub.nuxt.space',
     favicon: {
-      image: '',
-      emoji: '🍃',
+      image: '/chdc-logo-256x.png',
+      emoji: '/chdc-logo-32x.png',
     },
   },
   directory: {
     listingPageLayout: 'card',
     search: {
       placeholder: 'Search among {0} tools',
-      icon: 'tabler:bow',
+      icon: 'i-material-symbols-search-insights',
       tags: {
         // options: none,select,show-all,
-        display: 'select',
+        display: 'show-all',
         intersection: false,
       },
     },
@@ -98,25 +98,68 @@ export default defineAppConfig({
   },
   footer: {
     description: "Best directory for my niche.",
-    navigation: [
-      {
-        title: "Directory", links: [{ title: "Submit", link: "/submit" }, { title: "Advertise", link: "/advertise" }],
+    navigation: [{
+      title: 'Directory',
+
+      links: {
+        '0': {
+          title: 'Submit',
+          link: '/submit',
+        },
+
+        '1': {
+          title: 'Advertise',
+          link: '/advertise',
+        },
       },
-      {
-        title: "Categories", links: [
-          { title: "SAAS", link: "/tags/saas" },
-          { title: "Dashboard", link: "/tags/dashboard" },
-          { title: "Landing Page", link: "/tags/landing-page" },
-          { title: "Toolbox", link: "/tags/toolbox" },
-        ],
+    }, {
+      title: 'Categories',
+
+      links: {
+        '0': {
+          title: 'SAAS',
+          link: '/tags/saas',
+        },
+
+        '1': {
+          title: 'Dashboard',
+          link: '/tags/dashboard',
+        },
+
+        '2': {
+          title: 'Landing Page',
+          link: '/tags/landing-page',
+        },
+
+        '3': {
+          title: 'Toolbox',
+          link: '/tags/toolbox',
+        },
       },
-      {
-        title: "Blog", links: [{ title: "Articles", link: "/blog" }],
+    }, {
+      title: 'Blog',
+
+      links: {
+        '0': {
+          title: 'Articles',
+          link: '/blog',
+        },
       },
-      {
-        title: "Legal", links: [{ title: "Privacy Policy", link: "/legal/terms-of-service" }, { title: "Terms of Service", link: "/legal/privacy-policy" }],
+    }, {
+      title: 'Legal',
+
+      links: {
+        '0': {
+          title: 'Privacy Policy',
+          link: '/legal/terms-of-service',
+        },
+
+        '1': {
+          title: 'Terms of Service',
+          link: '/legal/privacy-policy',
+        },
       },
-    ],
+    }],
     socials: {
       github: {
         link: '',
