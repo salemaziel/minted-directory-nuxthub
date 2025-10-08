@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-
   modules: [
     '@nuxtjs/seo',
     '@nuxtjs/tailwindcss',
@@ -11,16 +10,24 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
   ],
+
   devtools: { enabled: true },
+
   site: {
-    url: 'https://example.com',
+    url: 'https://salemaziel-minted-directory-nuxthub.nuxt.space',
   },
+
   colorMode: {
     classSuffix: '',
   },
+
   content: {
     preview: {
       api: 'https://api.nuxt.studio',
+      gitInfo: {
+        name: "minted-directory-nuxthub",
+        owner: "salemaziel",
+        url: "https://github.com/salemaziel/minted-directory-nuxthub"
     },
   },
   runtimeConfig: {
@@ -57,4 +64,7 @@ export default defineNuxtConfig({
       },
     },
   },
+},
+
+  compatibilityDate: '2025-10-08',
 });
